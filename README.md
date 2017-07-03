@@ -1,2 +1,3 @@
 - 参考
   - https://www.openvpn.jp/document/how-to
+  - http://www.openvpn.jp/document/statickey-mini-howto/
