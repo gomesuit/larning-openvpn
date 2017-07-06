@@ -13,3 +13,6 @@ yum install -y openvpn easy-rsa
 # ./build-key-server server
 # ./build-key client
 # ./build-dh
+
+yum install -y traceroute
+# openvpn /vagrant/settings/server.conf
