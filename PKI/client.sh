@@ -13,3 +13,6 @@ yum install -y openvpn
 
 yum install -y traceroute
 # openvpn /vagrant/settings/client.conf
+
+# 疎通確認
+# ping 10.8.0.1
