@@ -1,0 +1,3 @@
+- 参考
+  - https://www.openvpn.jp/document/how-to
+  - http://qiita.com/hideki/items/657a5701133e713fcf8c
