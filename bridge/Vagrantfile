@@ -8,9 +8,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.ssh.forward_agent = true
   #config.vm.synced_folder '.', '/home/vagrant/synced'
 
-  config.vm.provider :virtualbox do |vb|
-    vb.customize ['modifyvm', :id, '--memory', '2048']
-  end
+  #config.vm.provider :virtualbox do |vb|
+  #  vb.customize ['modifyvm', :id, '--memory', '2048']
+  #end
 
   config.vm.define :server do |host|
     host.vm.hostname = 'server'
@@ -28,4 +28,3 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     #host.vm.provision :shell, path: 'provision.sh', privileged: false
   end
 end
-
