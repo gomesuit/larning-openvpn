@@ -18,6 +18,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     #host.vm.network :private_network, ip: '192.168.100.10', :netmask => '255.255.255.0', virtualbox__intnet: '01'
     host.vm.provision :shell, path: 'server.sh'
     #host.vm.provision :shell, path: 'provision.sh', privileged: false
+    #
+    config.vm.provider :virtualbox do |vb|
+      # enable promiscuous mode on the public network
+      vb.customize ["modifyvm", :id, "--nicpromisc2", "allow-all"]
+    end
   end
 
   config.vm.define :client do |host|
