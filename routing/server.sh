@@ -22,7 +22,7 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 
 # VPNクライアントのトラフィックをインターネットにNATで接続させる
 # enp0s8の部分は環境により異なる
-# iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o enp0s8 -j MASQUERADE
+# iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o enp0s3 -j MASQUERADE
 
 # openvpn 起動
 # openvpn /vagrant/settings/server.conf
