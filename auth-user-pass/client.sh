@@ -12,7 +12,7 @@ yum install -y openvpn
 # traceroute -U -p 1194 192.168.33.10
 
 yum install -y traceroute
-# openvpn --auth-user-pass --config /vagrant/settings/client.conf
+# openvpn /vagrant/settings/client.conf
 # user1
 # pass9876#
 
